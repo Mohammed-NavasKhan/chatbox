@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: #f9fafb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,4 +14,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+}
+
+@layer base {
+  h1 {
+    @apply font-extrabold text-2xl mb-3;
+  }
 }

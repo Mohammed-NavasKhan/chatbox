@@ -7,9 +7,12 @@ const NavBar = () => {
   const { status, data: session } = useSession();
   if (status === "loading") return null;
   return (
-    <div className="flex justify-end bg-sky-950 p-5 text-emerald-50 text-right">
+    <div className="flex justify-end p-4 text-right border text-black font-semibold">
       <Link href={"/"} className="mr-5">
         Home
+      </Link>
+      <Link href={"/train-model"} className="mr-5">
+        Train Model
       </Link>
       <Link href={"/users"} className="mr-5">
         Users
